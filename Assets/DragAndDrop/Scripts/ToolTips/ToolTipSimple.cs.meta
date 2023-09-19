@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 01a5ca9ab37c21c489cb3663ba49f30b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 139346
+  packageName: Drag and Drop
+  packageVersion: 1.0
+  assetPath: Assets/DragAndDrop/Scripts/ToolTips/ToolTipSimple.cs
+  uploadId: 316318

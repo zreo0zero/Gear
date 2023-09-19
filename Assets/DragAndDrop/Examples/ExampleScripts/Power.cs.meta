@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 826fbc736dca1a241b138cd016e00b36
+timeCreated: 1536662495
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 139346
+  packageName: Drag and Drop
+  packageVersion: 1.0
+  assetPath: Assets/DragAndDrop/Examples/ExampleScripts/Power.cs
+  uploadId: 316318
