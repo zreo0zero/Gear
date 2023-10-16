@@ -1,9 +1,17 @@
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject clearPanel;  // 게임 클리어 시 보여줄 패널
+    private Example watch;
+
+    private void Awake() // 또는 Start() 메서드를 사용할 수도 있습니다.
+    {
+        watch = FindObjectOfType<Example>();
+    }
+
 
     // 게임 클리어 조건을 확인하는 함수
     public void CheckGameClearCondition(bool isEndGearActive)
@@ -16,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     void GameClear()
     {
+        watch.StopTimer();
         StartCoroutine(ShowClearPanelAfterDelay(3.0f));
     }
 
