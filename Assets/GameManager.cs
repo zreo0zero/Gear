@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,13 @@ public class GameManager : MonoBehaviour
 
     void GameClear()
     {
+        StartCoroutine(ShowClearPanelAfterDelay(3.0f));
+    }
+
+    IEnumerator ShowClearPanelAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         clearPanel.SetActive(true);
     }
+
 }
