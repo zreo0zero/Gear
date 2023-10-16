@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 810e28b3fbc56f54aa5668329a8d3019
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 139346
+  packageName: Drag and Drop
+  packageVersion: 1.0
+  assetPath: Assets/DragAndDrop/Examples/Shop/Items/Green Medal.asset
+  uploadId: 316318

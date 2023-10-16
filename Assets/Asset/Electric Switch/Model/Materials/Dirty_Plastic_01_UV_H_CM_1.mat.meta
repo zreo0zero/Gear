@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dc718925f286bdc459ecf0c789ae735b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 113046
+  packageName: Electric Switch Minigame
+  packageVersion: 2.0
+  assetPath: Assets/Electric Switch/Model/Materials/Dirty_Plastic_01_UV_H_CM_1.mat
+  uploadId: 344811

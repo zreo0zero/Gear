@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 87e3f00b4113ef343b64ddb85af597fa
+timeCreated: 1508632336
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 139346
+  packageName: Drag and Drop
+  packageVersion: 1.0
+  assetPath: Assets/DragAndDrop/Examples/ExampleScripts/CharmUI.cs
+  uploadId: 316318

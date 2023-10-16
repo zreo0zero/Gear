@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 87a14471e2bae7a43b1feccb73f619a7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 139346
+  packageName: Drag and Drop
+  packageVersion: 1.0
+  assetPath: Assets/DragAndDrop/Examples/Shop/Items/Bronze Crown.asset
+  uploadId: 316318
