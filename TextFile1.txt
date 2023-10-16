@@ -1,0 +1,173 @@
+using SilkyRobot.GearSystem;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GearSpin : MonoBehaviour
+{
+    public bool canDrive = false; // 기어가 다른 기어를 구동할 수 있는지 여부
+
+    void OnTriggerEnter(Collider other)
+    {
+        GearComponent otherGear = other.GetComponent<GearComponent>();
+        GearComponent mainGear = GetComponent<GearComponent>();
+
+        // 충돌한 오브젝트의 GearSpin 컴포넌트를 가져옴
+        GearSpin otherGearSpin = other.GetComponent<GearSpin>();
+
+        if (this.canDrive && otherGear != null)
+        {
+            mainGear.AddDrivenComponent(otherGear);
+
+           
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        GearComponent otherGear = other.GetComponent<GearComponent>();
+        GearComponent mainGear = GetComponent<GearComponent>();
+
+        // 충돌한 오브젝트의 GearSpin 컴포넌트를 가져옵니다.
+        GearSpin otherGearSpin = other.GetComponent<GearSpin>();
+
+        if (otherGear != null)
+        {
+            mainGear.RemoveDrivenComponent(otherGear);
+        }
+
+        // 다시 쓸수 있도록 false로 바꿈
+        if (otherGearSpin != null)
+        {
+            otherGearSpin.canDrive = false;
+        }
+    }
+}
+
+
+
+
+using SilkyRobot.GearSystem;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GearSpin : MonoBehaviour
+{
+    public bool canDrive = false; // 기어가 다른 기어를 구동할 수 있는지 여부
+    void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log("닿음");
+        GearComponent otherGear = other.GetComponent<GearComponent>();
+        GearComponent mainGear = GetComponent<GearComponent>();
+        if (this.canDrive && otherGear != null)
+        {
+            mainGear.AddDrivenComponent(otherGear);
+            canDrive = true;
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        //Debug.Log("나감");
+        GearComponent otherGear = other.GetComponent<GearComponent>();
+        GearComponent mainGear = GetComponent<GearComponent>();
+
+        if (otherGear != null)
+        {
+            mainGear.RemoveDrivenComponent(otherGear);
+            
+        }
+    }
+}
+
+
+using SilkyRobot.GearSystem;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GearSpin : MonoBehaviour
+{
+    public bool canDrive = false; // 기어가 다른 기어를 구동할 수 있는지 여부
+
+    void OnTriggerEnter(Collider other)
+    {
+        GearComponent otherGear = other.GetComponent<GearComponent>();
+        GearComponent mainGear = GetComponent<GearComponent>();
+
+        // 충돌한 오브젝트의 GearSpin 컴포넌트를 가져옵니다.
+        GearSpin otherGearSpin = other.GetComponent<GearSpin>();
+
+        if (this.canDrive && otherGear != null)
+        {
+            mainGear.AddDrivenComponent(otherGear);
+
+            // 충돌한 오브젝트의 canDrive 값을 현재 오브젝트의 canDrive 값으로 설정합니다.
+            if (otherGearSpin != null) 
+            {
+                otherGearSpin.canDrive = false;  // 여기를 false로 변경
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        GearComponent otherGear = other.GetComponent<GearComponent>();
+        GearComponent mainGear = GetComponent<GearComponent>();
+
+        if (otherGear != null)
+        {
+            mainGear.RemoveDrivenComponent(otherGear);
+        }
+
+        // OnTriggerExit에서는 otherGearSpin.canDrive 값을 변경하지 않습니다.
+    }
+}
+
+using SilkyRobot.GearSystem;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GearSpin : MonoBehaviour
+{
+    public bool canDrive = false; 
+
+    void OnTriggerEnter(Collider other)
+    {
+        GearComponent otherGear = other.GetComponent<GearComponent>();
+        GearComponent mainGear = GetComponent<GearComponent>();
+
+        GearSpin otherGearSpin = other.GetComponent<GearSpin>();
+
+        if (this.canDrive && otherGear != null)
+        {
+            mainGear.AddDrivenComponent(otherGear);
+
+            if (otherGearSpin != null) 
+            {
+                otherGearSpin.canDrive = false;  
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        GearComponent otherGear = other.GetComponent<GearComponent>();
+        GearComponent mainGear = GetComponent<GearComponent>();
+
+        if (otherGear != null)
+        {
+            mainGear.RemoveDrivenComponent(otherGear);
+        }
+
+        GearSpin otherGearSpin = other.GetComponent<GearSpin>();
+
+        if (otherGearSpin != null)
+        {
+            otherGearSpin.canDrive = true;  // B나 C가 A에서 분리되면 canDrive를 다시 true로 설정합니다.
+        }
+    }
+}

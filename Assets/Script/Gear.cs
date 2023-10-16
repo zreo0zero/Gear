@@ -14,10 +14,4 @@ public class Gear : MonoBehaviour
             startGear = pin.startPin;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

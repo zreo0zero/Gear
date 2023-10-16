@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 421389c1721a6fe4ca9eb5fadcf23012
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 302e778ac7b226f4da29eef29844c7c3, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237167
+  packageName: Gear System
+  packageVersion: 1.0
+  assetPath: Assets/SilkyRobot/GearSystem/Scripts/Gear_Motor.cs
+  uploadId: 594440
