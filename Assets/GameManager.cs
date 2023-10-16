@@ -1,13 +1,14 @@
 using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject clearPanel;  // 게임 클리어 시 보여줄 패널
     private Example watch;
 
-    private void Awake() // 또는 Start() 메서드를 사용할 수도 있습니다.
+    private void Awake() // 또는 Start() 메서드를 사용할 수도 있습니다
     {
         watch = FindObjectOfType<Example>();
     }
@@ -33,5 +34,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         clearPanel.SetActive(true);
     }
-
+    public void Restart()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; // 지금하고 있는 씬의 인덱스를 가져옴
+        SceneManager.LoadScene(currentSceneIndex);
+    }
 }

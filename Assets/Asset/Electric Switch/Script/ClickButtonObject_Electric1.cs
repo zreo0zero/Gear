@@ -10,10 +10,6 @@ public class ClickButtonObject_Electric1 : MonoBehaviour
 
     private float num = -90;
 
-    private void Start()
-    {
-    }
-
     void OnMouseDown()
     {
         electric1.ClickButton(clickIndex);
